@@ -20,7 +20,6 @@ class LoginActivity : AppCompatActivity() {
 
         tv_register.setOnClickListener {
 
-            // :v
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }
