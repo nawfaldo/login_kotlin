@@ -69,7 +69,7 @@ class RegisterActivity : BaseActivity() {
                 false
             }
             else -> {
-                showErrorSnackBar("Your details are valid.", false)
+                showErrorSnackBar("Logging you in :)", false)
                 true
             }
         }
