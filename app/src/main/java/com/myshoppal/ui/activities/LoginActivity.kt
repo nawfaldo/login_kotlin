@@ -3,6 +3,7 @@ package com.myshoppal.ui.activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.myshoppal.R
 import kotlinx.android.synthetic.main.activity_login.*
@@ -29,8 +30,14 @@ class LoginActivity : BaseActivity() {
         }
     }
 
+    val pass: EditText = findViewById(R.id.et_password)
+    val mail : EditText = findViewById(R.id.et_email)
+
+    val password = pass.toString()
+    val email = mail.toString()
+
     fun loginUser() {
-        if ( et_password.text == "123456" && et_email.text == "aldo") {
+        if ( password == "123456" && email == "aldo") {
             showErrorSnackBar("Logging you in :)", false)
         } else {
             showErrorSnackBar("Who are you >:", true)
