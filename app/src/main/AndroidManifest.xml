@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activities.LayoutingActivity"
+            android:name=".ui.activities.layoutActivity"
             android:exported="true" />
         <activity
             android:name=".ui.activities.SplashActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +26,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.activities.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.activities.RegisterActivity"
             android:screenOrientation="portrait"

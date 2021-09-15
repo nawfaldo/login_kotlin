@@ -25,9 +25,9 @@ class LoginActivity : BaseActivity() {
 
         tv_register.setOnClickListener {
 
-            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-            startActivity(intent)
-        }
+             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+             startActivity(intent)
+         }
     }
 
     val pass: EditText = findViewById(R.id.et_password)

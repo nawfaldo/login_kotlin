@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.myshoppal.R
 
-class LayoutingActivity : AppCompatActivity() {
+class layoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_layouting)
+        setContentView(R.layout.activity_layout)
     }
 }
