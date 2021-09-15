@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.myshoppal.R
 import kotlinx.android.synthetic.main.activity_login.*
 @Suppress("DEPRECATION")
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +18,22 @@ class LoginActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+        btn_login.setOnClickListener {
+            loginUser()
+        }
+
         tv_register.setOnClickListener {
 
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    fun loginUser() {
+        if ( et_password.text == "123456" && et_email.text == "aldo") {
+            showErrorSnackBar("Logging you in :)", false)
+        } else {
+            showErrorSnackBar("Who are you >:", true)
         }
     }
 }
